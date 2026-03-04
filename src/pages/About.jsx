@@ -77,7 +77,7 @@ function About() {
               </div>
             </div>
 
-            <a href="/resume/resume.pdf" download className="download-btn">
+            <a href="./resume/resume.pdf" download className="download-btn">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
                 <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
               </svg>

@@ -7,7 +7,7 @@ const projects = [
     title: 'Starfall Chronicles',
     category: 'Animation',
     description: 'Lead character voice for a sci-fi animated series. Portrayed the protagonist through 12 episodes of emotional storytelling.',
-    audio: '/audio/sample1.mp3',
+    audio: './audio/sample1.mp3',
     tags: ['Animation', 'Lead Role', 'Sci-Fi'],
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: 'Ember & Ash',
     category: 'Video Game',
     description: 'Multiple NPC voices for an indie RPG game. Brought depth and personality to over 20 unique characters.',
-    audio: '/audio/sample2.mp3',
+    audio: './audio/sample2.mp3',
     tags: ['Video Game', 'RPG', 'Multi-Character'],
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: 'Horizon Bank Commercial',
     category: 'Commercial',
     description: "Warm, trustworthy voice-over for a regional bank's TV and radio commercial campaign.",
-    audio: '/audio/sample3.mp3',
+    audio: './audio/sample3.mp3',
     tags: ['Commercial', 'Corporate', 'Radio'],
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     title: 'The Lost Garden — Audiobook',
     category: 'Audiobook',
     description: 'Full narration for a 6-hour fantasy novel, performing multiple character voices with distinct personalities.',
-    audio: '/audio/sample4.mp3',
+    audio: './audio/sample4.mp3',
     tags: ['Audiobook', 'Narration', 'Fantasy'],
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     title: 'LittleLearn App',
     category: 'E-Learning',
     description: "Friendly, engaging narration for a children's educational app covering phonics and early reading skills.",
-    audio: '/audio/sample5.mp3',
+    audio: './audio/sample5.mp3',
     tags: ['E-Learning', 'Children', 'Educational'],
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: 'Noir City Podcast Drama',
     category: 'Podcast',
     description: 'Recurring cast member in an episodic audio drama series set in 1940s Los Angeles.',
-    audio: '/audio/sample6.mp3',
+    audio: './audio/sample6.mp3',
     tags: ['Podcast', 'Drama', 'Audio Drama'],
   },
 ];

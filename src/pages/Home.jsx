@@ -20,8 +20,8 @@ function Home() {
               my voice tells your story.
             </p>
             <div className="hero-buttons">
-              <Link to="/demos" className="btn-primary">Listen to Demos</Link>
-              <Link to="/contact" className="btn-secondary">Work With Me</Link>
+              <Link to="demos" className="btn-primary">Listen to Demos</Link>
+              <Link to="contact" className="btn-secondary">Work With Me</Link>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ function Home() {
         <div className="cta-container">
           <h2>Ready to Create Something Amazing?</h2>
           <p>Let's collaborate on your next project.</p>
-          <Link to="/contact" className="btn-primary">Get In Touch</Link>
+          <Link to="contact" className="btn-primary">Get In Touch</Link>
         </div>
       </section>
     </div>
