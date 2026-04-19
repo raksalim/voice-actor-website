@@ -1,6 +1,6 @@
 .navbar {
-  background: var(--bg-white);
-  box-shadow: 0 2px 12px var(--shadow);
+  background: var(--background-color);
+  box-shadow: 0 2px 12px var(--primary-dark);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,7 +20,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: black;
   letter-spacing: 0.5px;
 }
 
@@ -45,7 +45,7 @@
 
 .nav-links .nav-cta {
   background: var(--primary);
-  color: var(--bg-white);
+  color: var(--background-color);
   padding: 0.5rem 1.25rem;
   border-radius: 25px;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -54,7 +54,11 @@
 .nav-links .nav-cta:hover {
   background: var(--primary-dark);
   transform: translateY(-1px);
-  color: var(--bg-white);
+  color: var(--background-color);
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
 }
 
 .hamburger {
@@ -65,13 +69,14 @@
   border: none;
   cursor: pointer;
   padding: 4px;
+  color: black; /* Added to make the hamburger icon visible */
 }
 
 .bar {
   display: block;
   width: 25px;
   height: 2px;
-  background: var(--primary-dark);
+  background: var(--primary-color);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -87,11 +92,11 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: var(--bg-white);
+    background: var(--background-color);
     flex-direction: column;
     padding: 1.5rem 2rem;
     gap: 1.25rem;
-    box-shadow: 0 4px 12px var(--shadow);
+    box-shadow: 0 4px 12px var(--primary-dark);
   }
 
   .nav-links.active {
