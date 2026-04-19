@@ -7,7 +7,7 @@ function Home() {
 		<div className="home">
 			<section
 				className="hero"
-				style={{ backgroundColor: 'var(--secondary-color)' }}
+				style={{ background: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))', backgroundAttachment: 'fixed' }}
 			>
 				<div className="hero-container">
 					<div className="hero-image">
@@ -40,10 +40,10 @@ function Home() {
 							</Link>
 						</div>
 					</div>
+				{/* Demo Container */}
+				<DemoPlaylistContainer />
 				</div>
 
-				{/* Demo Container */}
-				{/* <DemoPlaylistContainer /> */}
 			</section>
 
 			<section className="highlights">
