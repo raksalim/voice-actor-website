@@ -23,7 +23,11 @@ const DemoPlaylistContainer = () => {
       {demos.map((demo, index) => (
         <div className="demo-item" key={index}>
           <p className='demo-title'>{demo.title}</p>
-          <audio controls>
+          <audio
+            controls
+            style={{ width: '100%' }}
+            controlsList="nodownload noremoteplayback noplaybackrate nodownload"
+          >
             <source
               src={demo.url}
               type={demo.url.endsWith('.mp3') ? 'audio/mpeg' : 'audio/wav'}

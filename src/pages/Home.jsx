@@ -47,7 +47,7 @@ function Home() {
 						<h1
 							style={{
 								background:
-									'linear-gradient(135deg, var(--secondary-color), var(--primary-user-name-color))',
+									'linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-user-name-color) 60%)',
 								WebkitBackgroundClip: 'text',
 								WebkitTextFillColor: 'transparent',
 								// textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
