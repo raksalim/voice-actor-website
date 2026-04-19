@@ -57,6 +57,10 @@
   color: var(--bg-white);
 }
 
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

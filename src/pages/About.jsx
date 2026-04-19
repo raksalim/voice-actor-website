@@ -12,7 +12,7 @@ function About() {
         <section className="about-bio-section">
           <div className="about-image-col">
             <div className="about-profile-placeholder">
-              <span>RL</span>
+              <img src="https://raksa-lim-voice-actor-website.s3.us-east-1.amazonaws.com/Voice+Actor+Headshot.jpg" alt="Raksa Lim Headshot" className="about-profile-image" />
             </div>
             <div className="about-social">
               <h4>Connect With Me</h4>
