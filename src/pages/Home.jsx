@@ -1,14 +1,34 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 import DemoPlaylistContainer from '../components/DemoPlaylistContainer';
+import { useEffect, useState } from 'react';
 
 function Home() {
+	const [scrollPosition, setScrollPosition] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY;
+			const documentHeight =
+				document.documentElement.scrollHeight - window.innerHeight;
+			const scrollPercentage = scrollTop / documentHeight;
+			setScrollPosition(scrollPercentage);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	const gradientStyle = {
+		background: `linear-gradient(135deg, var(--primary-color) ${
+			60 - scrollPosition * 50
+		}%, var(--secondary-color))`,
+		backgroundAttachment: 'fixed',
+	};
+
 	return (
 		<div className="home">
-			<section
-				className="hero"
-				style={{ background: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))', backgroundAttachment: 'fixed' }}
-			>
+			<section className="hero" style={gradientStyle}>
 				<div className="hero-container">
 					<div className="hero-image">
 						<div className="profile-placeholder">
@@ -24,7 +44,22 @@ function Home() {
 						<p className="hero-tagline">
 							Voice Actor &amp; Performer
 						</p>
-						<h1>Raksa Lim</h1>
+						<h1
+							style={{
+								background:
+									'linear-gradient(135deg, var(--secondary-color), var(--primary-user-name-color))',
+								WebkitBackgroundClip: 'text',
+								WebkitTextFillColor: 'transparent',
+								// textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
+								fontWeight: 'bold',
+								fontSize: '3.5rem',
+								letterSpacing: '1px',
+							}}
+
+
+						>
+							Raksa Lim
+						</h1>
 						<p className="hero-description">
 							Bringing characters to life with warmth,
 							versatility, and passion. From animated series to
@@ -40,10 +75,9 @@ function Home() {
 							</Link>
 						</div>
 					</div>
-				{/* Demo Container */}
-				<DemoPlaylistContainer />
+					{/* Demo Container */}
+					<DemoPlaylistContainer />
 				</div>
-
 			</section>
 
 			<section className="highlights">

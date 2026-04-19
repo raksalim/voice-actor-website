@@ -22,7 +22,7 @@ const DemoPlaylistContainer = () => {
       <h2>Listen to My Demos</h2>
       {demos.map((demo, index) => (
         <div className="demo-item" key={index}>
-          <h3>{demo.title}</h3>
+          <p className='demo-title'>{demo.title}</p>
           <audio controls>
             <source
               src={demo.url}
