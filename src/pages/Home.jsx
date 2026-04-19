@@ -43,7 +43,7 @@ function Home() {
 				</div>
 
 				{/* Demo Container */}
-				<DemoPlaylistContainer />
+				{/* <DemoPlaylistContainer /> */}
 			</section>
 
 			<section className="highlights">
