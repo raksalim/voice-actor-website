@@ -2,6 +2,7 @@
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #c0639e 100%);
   padding: 5rem 2rem;
   color: var(--text-light);
+  border-radius: 10px;
 }
 
 .hero-container {
